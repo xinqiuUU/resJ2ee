@@ -278,7 +278,6 @@
             item.status =  fid==item.fid;
           });
           //历史访问记录
-          //TODO : 数据埋点
           axios.post("resfood.action?op=traceBrowseFood&fid="+fid ).then( result=>{
             var  jm = result.data;
             if ( jm.code==1){

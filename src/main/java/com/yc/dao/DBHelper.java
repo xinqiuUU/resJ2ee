@@ -121,7 +121,6 @@ public class DBHelper {
                 Object value=entry.getValue();
                 //System.out.println( key+"   :   "+value );   //
 
-                //TODO: 取出 c中取应的那个  setXxx, 激活它，设置值(类型转换 ).
                 //key=>  setXxx
                 String methodName="set"+key;
                 Method setMethod= findSetMethod(  methodName,  c  )  ;
@@ -201,7 +200,7 @@ public class DBHelper {
                 //那么到底有几个列啊????
                 for( int i=0;i<columnCount;i++){
                     //数据类型
-                    //System.out.print( rs.getObject(   i+1 )+"\t");   // TODO:  这个数据不能这样处理...
+                    //System.out.print( rs.getObject(   i+1 )+"\t");
                     map.put(   rsmd.getColumnName(i+1),   rs.getObject(   i+1)   );   //存每一列...
                 }
                 list.add( map );  //将这个map存到 list
