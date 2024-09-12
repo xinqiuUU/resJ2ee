@@ -77,9 +77,9 @@
           <tr v-for="cartfood in cartfoods">
             <td>{{cartfood.food.fname}}</td>
             <td>
-                <button @click="addCart(cartfood.food.fid,-1)">-</button>
+                <button @click="addCart(cartfood.food.fid,-1)" style="width: 25px">-</button>
                 {{cartfood.num}}
-                <button @click="addCart(cartfood.food.fid,+1)">+</button>
+                <button @click="addCart(cartfood.food.fid,+1)" style="width: 25px">+</button>
             </td>
           </tr>
       </table>

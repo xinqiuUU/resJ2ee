@@ -87,10 +87,6 @@ public class DBHelper {
         }
         return list;
     }
-
-
-
-
     /**  方法名相同，参数不同=>重载方法
      * 查询返回值是一个  List<T>  T代表任意的类的对象.
      *     T类标准javaBean: 属性封装(private), 对外提供 get/set    setXxxx(参数)
@@ -175,9 +171,6 @@ public class DBHelper {
         }
         return null;
     }
-
-
-
     /**
      * 查询
      * @param sql
